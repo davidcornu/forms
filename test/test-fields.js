@@ -160,6 +160,8 @@ var testField = function (field) {
 
 testField('string');
 
+testField('file');
+
 exports['string parse'] = function (test) {
     test.equals(fields.string().parse(), '');
     test.equals(fields.string().parse(null), '');
